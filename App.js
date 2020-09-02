@@ -15,12 +15,12 @@ const App = () => {
     const unsubscribe = messaging().onMessage(async (remoteMessage) => {
       const status = remoteMessage.data.status;
       const followerName = remoteMessage.data.followerName;
-      if (status === 'change') {
-        Alert.alert(
-          'Check it out right now!',
-          `The asset information of ${followerName} you are following has changed.`,
-        );
-      }
+      // if (status === 'change') {
+      Alert.alert(
+        'Check it out right now!',
+        `The asset information of ${followerName} you are following has changed.`,
+      );
+      // }
       console.log(remoteMessage);
     });
     return unsubscribe;
