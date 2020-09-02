@@ -26,21 +26,14 @@ const App = () => {
     return unsubscribe;
   }, []);
 
-  // useEffect(() => {
-  //   const unsubscribe = messaging().onMessage(async (remoteMessage) => {
-  //     Alert.alert('제발 되라 제발~~', JSON.stringify(remoteMessage));
-  //   });
-  //   return unsubscribe;
-  // }, []);
-
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
         <StatusBar translucent barStyle="dark-content" />
-        <Text>Hi!!!</Text>
+        <Text style={styles.mainFont}>Hi!!!</Text>
         <TouchableOpacity style={styles.mainBtn}>
-          <Text>Button1!!</Text>
+          <Text>Button!!</Text>
         </TouchableOpacity>
       </SafeAreaView>
     </>
@@ -53,8 +46,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignContent: 'center',
   },
+  mainFont: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: 'skyblue',
+    textAlign: 'center',
+  },
   mainBtn: {
+    width: 200,
     padding: 14,
+    alignItems: 'center',
+    alignSelf: 'center',
     borderRadius: 10,
     backgroundColor: 'skyblue',
   },
