@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "376972078685",
+    "firebase_url": "https://react-native-push-notifi-c5e0b.firebaseio.com",
+    "project_id": "react-native-push-notifi-c5e0b",
+    "storage_bucket": "react-native-push-notifi-c5e0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376972078685:android:65e5df69f30ed07fcca7b4",
+        "android_client_info": {
+          "package_name": "com.notificationtask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376972078685-nf8rvvfds09glcnq4tb96usov0nkfmv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW44kKMWteRIS6DNEr5hyg7UwC2dzfKG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376972078685-nf8rvvfds09glcnq4tb96usov0nkfmv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
