@@ -13,7 +13,7 @@ import messaging from '@react-native-firebase/messaging';
 const App = () => {
   useEffect(() => {
     const unsubscribe = messaging().onMessage(async (remoteMessage) => {
-      const status = remoteMessage.data.status;
+      // const status = remoteMessage.data.status;
       const followerName = remoteMessage.data.followerName;
       // if (status === 'change') {
       Alert.alert(
@@ -21,7 +21,6 @@ const App = () => {
         `The asset information of ${followerName} you are following has changed.`,
       );
       // }
-      console.log(remoteMessage);
     });
     return unsubscribe;
   }, []);
